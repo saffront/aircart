@@ -21,6 +21,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'devise'
 
+gem 'paperclip'
+
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -34,8 +36,6 @@ gem 'bootstrap-sass'
 gem 'stripe'
 
 gem 'figaro'
-
-gem 'paperclip'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
