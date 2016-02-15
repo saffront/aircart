@@ -1,5 +1,16 @@
+@media (min-width: 980px) {
+body {
+    padding-top: 60px;
+}
+}
+
+.push-down {
+    margin-top: 60px;
+}
+
 .navbar {
     margin-bottom: 0 !important;
+    margin: 0 !important;
 }
 
 .navbar-right-space {
@@ -8,6 +19,10 @@
 
 .navbar-left-space {
   padding-left: 15px;
+}
+
+.btn-signout {
+
 }
 
 .animate
@@ -125,4 +140,13 @@
   border: 1px solid #000000;
   background-color: #E44C65;
   margin-top: 10px;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.centered {
+  position: relative;
+  margin: 0 auto;
 }
