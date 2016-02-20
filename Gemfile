@@ -19,6 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 
+gem 'acts_as_votable'
+
 gem 'devise', '3.4.1'
 
 gem 'paperclip'
