@@ -33,14 +33,9 @@
       <!-- ******HEADER****** -->
       <header id="header" class="header">
         <div class="container">
-          <h1 class="logo pull-left">
-            <a href="index.html">
-              <!-- <img src="/assets/aircart.png" /> -->
-              <p>
-                Aircart
-              </p>
-            </a>
-          </h1>
+          <a class="navbar-brand pull-left" href="#">
+            <img src="/assets/aircart.png" class=""/>
+          </a>
           <!--//logo-->
           <nav id="main-nav" class="main-nav navbar-right" role="navigation">
             <div class="navbar-header">
@@ -70,10 +65,10 @@
                 <!-- <li class="nav-item"><button type="button" class="login-trigger btn btn-link" data-toggle="modal" data-target="#login-modal">Log in</button></li>
                             <li class="nav-item nav-item-cta last"><button type="button" class="btn btn-cta btn-cta-primary" data-toggle="modal" data-target="#signup-modal" >Get Started</button></li> -->
                 <% if current_user %>
-                <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "login-trigger btn btn-link" %>
+                <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-item login-trigger btn btn-link" %>
               <% else %>
-                <%= link_to "Log In", new_user_session_path, class: "login-trigger btn btn-link", method: :get %>
-                <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-cta btn-cta-primary", method: :get %>
+                <%= link_to "Log In", new_user_session_path, class: "nav-item btn btn-cta btn-cta-primary", method: :get %>
+                <%= link_to "Sign Up", new_user_registration_path, class: "nav-item btn btn-cta btn-cta-primary", method: :get %>
                 <% end %>
               </ul>
               <!--//nav-->
