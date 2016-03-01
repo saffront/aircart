@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'posts/new'
+  get '/about' => 'home#about'
 
 devise_for :users, controllers: { registrations: 'users/registrations' }
   resources :posts do
