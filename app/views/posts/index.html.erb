@@ -3,7 +3,7 @@
       <h2>
         <%= link_to post.item, post %><br>
         <small class=""><%= post.country%></small>
-        <small class="author">Submitted <%= time_ago_in_words(post.created_at) %> by <%= post.user.email %></small>
+        <small class="author">Submitted <%= time_ago_in_words(post.created_at) %> by <%= post.user.name %></small>
       </h2>
 
       <div class="btn-group">
