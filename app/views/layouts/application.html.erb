@@ -34,7 +34,7 @@
       <header id="header" class="header">
         <div class="container">
           <a class="navbar-brand pull-left" href="#">
-            <img src="/assets/aircart.png" class=""/>
+            <%= link_to image_tag("/assets/aircart.png"), root_path  %>
           </a>
           <!--//logo-->
           <nav id="main-nav" class="main-nav navbar-right" role="navigation">
@@ -64,6 +64,9 @@
                 </li>
                 <li class="nav-item">
                   <%= link_to "Post a Request", posts_new_path %>
+                </li>
+                <li class="nav-item">
+                  <%= link_to "Contact Us", new_contact_path %>
                 </li>
                 <!-- <li class="nav-item"><button type="button" class="login-trigger btn btn-link" data-toggle="modal" data-target="#login-modal">Log in</button></li>
                             <li class="nav-item nav-item-cta last"><button type="button" class="btn btn-cta btn-cta-primary" data-toggle="modal" data-target="#signup-modal" >Get Started</button></li> -->
