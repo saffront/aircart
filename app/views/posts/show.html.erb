@@ -1,9 +1,8 @@
-<div class="page-header">
-  <h1><a href="<%= @post.description %>"><%= @post.title %></a><br> <small>Submitted by <%= @post.user.name %></small></h1>
+<div class="page-header text-center">
+  <h1><a href="<%= @post.description %>"><%= @post.item %></a><br> <small>Submitted by <%= @post.user.name %></small></h1>
 </div>
 
-
-<div class="btn-group pull-right">
+<div class="btn-group col-sm-5- col-sm-offset-5">
   <%= link_to like_post_path(@post), method: :put, class: "btn btn-default btn-sm" do %>
     <span class="glyphicon glyphicon-chevron-up"></span>
     Upvote
@@ -21,19 +20,4 @@
 		<%= link_to 'Edit', edit_post_path(@post), class: "btn btn-default" %>
 		<%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
 	</div>
-<% end %>
-
-<h3 class="comments_title">
-  <%= @post.comments.count %> Comments
-</h3>
-
-<div id="comments">
-  <%= render :partial => @post.comments %>
-</div>
-<%= simple_form_for [@post, Comment.new]  do |f| %>
-  <div class="field">
-    <%= f.text_area :body, class: "form-control" %>
-  </div>
-  <br>
-  <%= f.submit "Add Comment", class: "btn btn-primary" %>
 <% end %>

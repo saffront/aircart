@@ -3,6 +3,7 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :item
       t.string :description
+      t.string :country
       t.string :category
       t.string :url
 
