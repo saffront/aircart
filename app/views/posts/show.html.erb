@@ -1,5 +1,11 @@
-<div class="page-header text-center">
-  <h1><%= @post.item %></a><br> <small>Submitted by <%= @post.user.name %></small></h1>
+<div class="page-header text-center posts">
+  <h1><%= @post.item %><br> <small>Submitted by <%= @post.user.name %></small></h1>
+  <br />
+  <p><%= @post.description %><br />
+    <span><i class="fa fa-map-pin"></i><%= @post.country %></span><br />
+    <span><i class="fa fa-folder"></i><%= @post.category %></span><br />
+    <span><i class="fa fa-link"></i><a><%= @post.url %></a></span>
+  </p>
 </div>
 
 <div class="btn-group col-sm-5- col-sm-offset-5">
