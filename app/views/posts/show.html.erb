@@ -1,4 +1,5 @@
 <div class="page-header text-center posts">
+  <%= image_tag @post.image.url, class: 'item-image' %>
   <h1><%= @post.item %><br> <small>Submitted by <%= @post.user.name %></small></h1>
   <br />
   <p><%= @post.description %><br />
