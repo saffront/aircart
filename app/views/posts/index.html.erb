@@ -1,10 +1,11 @@
+<div class="transitions-enabled" id="posts">
 <% @posts.each do |post| %>
-  <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-lg-4 col-lg-offset-4">
-    <%= link_to image_tag(post.image.url, class: 'item-image'), post.image.url, target: '_blank' %>
+  <div class="box panel panel-default">
+    <%= image_tag(post.image.url, class: 'item-image') %>
       <h2>
         <%= link_to post.item, post %><br>
-        <small class=""><%= post.country%></small>
-        <small class="author">Submitted <%= time_ago_in_words(post.created_at) %> by <%= post.user.name %></small>
+        <small class=""><%= post.country %></small><br />
+        <small class="author">Submitted <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.name %></small>
       </h2>
 
       <div class="btn-group">
@@ -21,3 +22,4 @@
       </div>
   </div>
 <% end %>
+</div>
