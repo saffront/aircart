@@ -1,6 +1,6 @@
-<div class="transitions-enabled" id="posts">
-<% @posts.each do |post| %>
-  <div class="box panel panel-default">
+<div class="transitions-enabled row" id="posts">
+<% @posts.each do |post| %> <!-- for loop for 4 elements in a row, print 4 for each roop in a nested for loop -->
+  <div class="box col-sm-3">
     <%= image_tag(post.image.url, class: 'item-image') %>
       <h2>
         <%= link_to post.item, post %><br>
