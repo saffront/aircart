@@ -80,7 +80,15 @@
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
-  border: 7px solid #000000;
+  border: 5px solid #000000;
+  background-color: #6DBD63;
+}
+
+.card-image {
+  -webkit-border-radius: 40px 40px 0 0;
+  -moz-border-radius: 40px 40px 0 0;
+  border-radius: 40px 40px 0 0;
+  border: 4px solid #000000;
   background-color: #6DBD63;
 }
 

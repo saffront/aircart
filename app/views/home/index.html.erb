@@ -106,7 +106,7 @@
 
         <div class="item clearfix">
           <div class="card">
-            <img src="/assets/japan_2.jpg" class="img-responsive max-width" alt="">
+            <img src="/assets/japan_2.jpg" class="card-image img-responsive max-width" alt="">
             <h3 class="text-center font-black">Kendama</h3>
             <h4 class="text-center font-black">4 requests</h4>
           </div>
@@ -114,17 +114,9 @@
         <!--//item-->
         <div class="item clearfix">
           <div class="card">
-            <img src="/assets/japan_2.jpg" class="img-responsive max-width" alt="">
-            <h3 class="text-center font-black">Kendama</h3>
-            <h4 class="text-center font-black">4 requests</h4>
-          </div>
-        </div>
-        <!--//item-->
-        <div class="item clearfix">
-          <div class="card">
-            <img src="/assets/japan_2.jpg" class="img-responsive max-width" alt="">
-            <h3 class="text-center font-black">Kendama</h3>
-            <h4 class="text-center font-black">4 requests</h4>
+            <img src="/assets/japan_3.jpg" class="card-image img-responsive max-width" alt="">
+            <h3 class="text-center font-black">Japanese Fans</h3>
+            <h4 class="text-center font-black">22 requests</h4>
           </div>
         </div>
         <!--//item-->
@@ -201,9 +193,9 @@
 <!-- ******VIDEO****** -->
 <section id="video" class="video section">
   <div class="container">
-    <h2 class="title">lorem ipsum</h2>
-    <p class="summary">lorem ipsum</p>
-    <div class="control text-center">
+    <h2 class="title"></h2>
+    <p class="summary"></p>
+    <div class="control text-center push-down">
       <button type="button" id="play-trigger" class="play-trigger" data-toggle="modal" data-target="#tour-video">
         <i class="fa fa-play"></i>
       </button>
@@ -390,7 +382,7 @@
     <!--//row-->
     <div class="more text-center">
       <h4 class="title">More questions?</h4>
-      <a class="btn btn-cta btn-cta-secondary" href="contact.html">Get in touch</a>
+      <%= link_to "Get in touch", new_contact_path, class: "btn btn-cta btn-cta-secondary" %>
     </div>
   </div>
   <!--//container-->
@@ -400,14 +392,11 @@
 <!-- ******SIGNUP****** -->
 <section id="signup" class="signup">
   <div class="container text-center">
-    <h2 class="title">lorem ipsum</h2>
+    <h2 class="title">Sign up today!</h2>
     <p class="summary"></p>
     <form class="signup-form" method="post" action="#">
       <div class="form-group">
-        <label class="sr-only" for="semail2">Your email</label>
-        <input type="email" id="semail2" name="semail2" class="form-control" placeholder="Enter your email address" required>
-      </div>
-      <button type="submit" class="btn btn-cta btn-cta-primary">SIGN UP</button>
+        <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-cta btn-cta-primary", method: :get %>
     </form>
     <!--//signup-form-->
   </div>
